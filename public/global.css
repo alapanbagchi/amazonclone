@@ -1,0 +1,24 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: none;
+    font-family: Proxima Nova;
+    --text-primary:#323435;
+    --text-secondary:#A7A6A6;
+    --amazon-yellow:#F8A621;
+    --amazon-blue:#232F3E;
+    --white-text:#fafafa;
+}
+a
+{
+    color: var(--text-primary);
+}
+.pointer
+{
+    cursor:pointer;
+}
