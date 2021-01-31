@@ -19,40 +19,6 @@ const filterproducts = (event) =>
 {   
     selected = event.detail.selected
 } 
-$: translate = 0
-
-$: count=0
-const prev = () =>
-{
-    let prev = setInterval(()=>
-        {
-            translate++;
-            [...document.getElementsByClassName('container')].forEach((element)=>{element.style.transform=`translateX(${translate}px)`})
-            if(translate==document.getElementById('product-wrapper').offsetWidth-151)
-            {
-                clearInterval(prev)
-            }
-        },0.001)
-        count--;
-}
-    
-
-
-const next = () =>
-{
-    let next = setInterval(()=>
-        {
-            translate++;
-            console.log(document.getElementById('product-wrapper').offsetWidth);
-            [...document.getElementsByClassName('container')].forEach((element)=>{element.style.transform=`translateX(-${translate}px)`})
-            if(translate==document.getElementById('product-wrapper').offsetWidth-151)
-            {
-                clearInterval(next)
-            }
-        
-        },0.001)
-        count++;
-}
 
 
 </script>
@@ -64,9 +30,7 @@ const next = () =>
         <SubNav navItems={navItems} on:current={filterproducts}/>
     </div>
     <div class="products">
-        <div on:click={prev} class="prev pointer">
-            <img width="20px" height="20px" src="./assets/left-arrow.svg" alt="">
-        </div>
+        
         <div id="product-wrapper" class="product-wrapper">
             
             {#each products as product,i}
@@ -78,10 +42,13 @@ const next = () =>
             {/each}
             
         </div>
-        <div on:click={next} class="next pointer">
-            <img width="20px" height="20px" src="./assets/right-arrow.svg" alt="">
+        <div class="ctacontainer">
+            <div class="showmore">
+                <a class="cta" style="color:#ffffff" href="/">Show More</a>
+            </div>
         </div>
     </div>
+    
     </div>
     
     <style>
@@ -94,27 +61,27 @@ const next = () =>
             justify-content: center;
             align-items: center;
             border-right: 1px solid #e8e8e8;
+            border-top: 1px solid #e8e8e8;
+            border-bottom: 1px solid #e8e8e8;
 
         }
-        .next
+        
+        .showmore
         {
-            width: 70px;
-            height: 100%;
+            padding: 15px 30px 15px 30px;
+            background: var(--amazon-blue);
+            color:white;
             display: flex;
             justify-content: center;
-            align-items: center;
-            background: #F6F6F6;
-            cursor:pointer;
+            width: 150px;
         }
-        .prev
+        .ctacontainer
         {
-            width: 70px;
-            height: 100%;
+            width: 100%;  
             display: flex;
-            justify-content: center;
-            background: #F6F6F6;
-            align-items: center;
-            cursor:pointer;
+            justify-content: center;  
+            color: white;
+            padding-top: 50px;
         }
         .feeduser
         {
@@ -143,16 +110,17 @@ const next = () =>
         .products
         {
             width: 100%;
-            height:460px;
+            height:fit-content;
+            height:fit-content;
             display: flex;
             justify-content: center;
-            
+            flex-direction: column;
         }
         .product-wrapper
         {
             width: 100%;
-            display: flex;
-            overflow:hidden;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
 
         }
       

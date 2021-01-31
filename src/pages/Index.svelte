@@ -25,66 +25,34 @@ const TemplateData = [
                 section:'Featured'
             },
             {
-                name:'Staple 100',
-                companyName:'BOSS',
-                image:'./assets/products/black-shoe-heels.png',
-                price:'$285',
+                name:'Kids Polo',
+                companyName:'Lacoste',
+                image:'./assets/products/tshirt.png',
+                price:'$45',
                 color:['#000000','#fccda2'],
                 section:'Featured'
             },
             {
-                name:'Staple 100',
-                companyName:'BOSS',
-                image:'./assets/products/black-shoe-heels.png',
-                price:'$285',
+                name:'Kids Polo',
+                companyName:'Lacoste',
+                image:'./assets/products/tshirt.png',
+                price:'$45',
                 color:['#000000','#fccda2'],
                 section:'Featured'
             },
             {
-                name:'Staple 100',
-                companyName:'BOSS',
-                image:'./assets/products/black-shoe-heels.png',
-                price:'$285',
+                name:'Kids Polo',
+                companyName:'Lacoste',
+                image:'./assets/products/tshirt.png',
+                price:'$45',
                 color:['#000000','#fccda2'],
                 section:'Featured'
             },
             {
-                name:'Staple 100',
-                companyName:'BOSS',
-                image:'./assets/products/black-shoe-heels.png',
-                price:'$285',
-                color:['#000000','#fccda2'],
-                section:'Featured'
-            },
-            {
-                name:'H8 Headphone',
-                companyName:'Beoplay',
-                image:'./assets/products/headphone.png',
-                price:'$399',
-                color:['#000000','#fccda2'],
-                section:'Featured'
-            },
-            {
-                name:'Yatch Master Rubber',
-                companyName:'Rolex',
-                image:'./assets/products/watch.png',
-                price:'$8,995',
-                color:['#000000','#fccda2'],
-                section:'Featured'
-            },
-            {
-                name:'H8 Headphone',
-                companyName:'Beoplay',
-                image:'./assets/products/headphone.png',
-                price:'$399',
-                color:['#000000','#fccda2'],
-                section:'Featured'
-            },
-            {
-                name:'H8 Headphone',
-                companyName:'Beoplay',
-                image:'./assets/products/headphone.png',
-                price:'$399',
+                name:'Kids Polo',
+                companyName:'Lacoste',
+                image:'./assets/products/tshirt.png',
+                price:'$45',
                 color:['#000000','#fccda2'],
                 section:'Featured'
             },
