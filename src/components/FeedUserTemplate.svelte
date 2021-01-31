@@ -42,7 +42,7 @@ const filterproducts = (event) =>
             {/each}
             
         </div>
-        <div class="ctacontainer">
+        <div class="ctacontainer pointer">
             <div class="showmore">
                 <a class="cta" style="color:#ffffff" href="/">Show More</a>
             </div>
@@ -88,7 +88,7 @@ const filterproducts = (event) =>
             width: 100%;
             min-height: 100vh;
             background: #F6F6F6;
-            padding-bottom: 25vh;
+            padding-bottom: 13vh;
         }
         .feeduser:nth-child(0)
         {
@@ -98,7 +98,6 @@ const filterproducts = (event) =>
         {
             width: 100%;
             min-height: fit-content;
-
             display: flex;
             justify-content: center;
         }
@@ -120,7 +119,7 @@ const filterproducts = (event) =>
         {
             width: 100%;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: repeat(auto-fill, minmax(min(25rem, 100%), 1fr));
 
         }
       

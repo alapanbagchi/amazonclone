@@ -234,4 +234,4 @@ const footer = [
 
 {/each}
 
-<!-- <Footer footer = {footer} /> -->
+<Footer footer = {footer} />
